@@ -3,9 +3,11 @@
 exports[`Renders the request dog page diplays the page for dogs 1`] = `
 <DocumentFragment>
   <form>
-    <h1>
-      Dog Form
-    </h1>
+    <title
+      date-testid="Dog"
+    >
+      Dog
+    </title>
     <h3>
       Please select one
     </h3>
@@ -13,6 +15,7 @@ exports[`Renders the request dog page diplays the page for dogs 1`] = `
       <input
         id="post"
         name="method"
+        placeholder="Enter post"
         type="radio"
         value="post"
       />

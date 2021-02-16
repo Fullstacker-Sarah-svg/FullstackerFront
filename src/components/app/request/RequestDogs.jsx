@@ -8,7 +8,7 @@ function RequestDog({ onSubmit, onChange, name, type, characteristic, method, id
   return (
     <>
       <form onSubmit={onSubmit} >
-        <h1>Dog Form</h1>
+        <title date-testid="Dog">Dog</title>
 
         <h3>Please select one</h3>
         <div>
@@ -16,6 +16,7 @@ function RequestDog({ onSubmit, onChange, name, type, characteristic, method, id
             id="post"
             type="radio" 
             name="method" 
+            placeholder="Enter post" 
             value="post"
             checked={method === 'post'}
             onChange={onChange} />
