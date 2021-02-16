@@ -7,7 +7,7 @@ import RequestDog from '../components/app/request/RequestDogs';
 
 import { deleteDog, findDogById, getDog, postDog, updateDog } from '../services/fetch';
 
-export default class Animals extends Component {
+export default class Dogs extends Component {
     state = {
       name: '',
       type: '',
