@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
-// const URL = 'https://localhost7899.com/api/v1/dogs';
-const URL = 'https://thawing-badlands-82054.herokuapp.com/api/v1/dogs';
+const URL = 'https://localhost7899/api/v1/dogs';
+// const URL = 'https://thawing-badlands-82054.herokuapp.com/api/v1/dogs';
 
 
 export const postDog = (name, type, characteristic) => {
