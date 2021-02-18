@@ -19,7 +19,8 @@ function RequestDog({ onSubmit, onChange, name, type, characteristic, method, id
             placeholder="Enter post" 
             value="post"
             checked={method === 'post'}
-            onChange={onChange} />
+            onChange={onChange}
+          />
           <label htmlFor="post">Add an Dog</label>
 
           <input 

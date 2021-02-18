@@ -3,14 +3,18 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import user from '@testing-library/user-event';
 import Dog from './Dog';
+
 describe.only('Dog containor', () => {
   it('check the application', () => {
     render(<Dog />);
-    // const ul = screen.getByPlaceholderText('Enter Post');
+    const postMethod = screen.getByPlaceholderText('Enter post');
+    
 
-    // return waitFor(() => {
-    //   expect(ul).not.toBeEmptyDOMElement();
-    // });
+    user.type(postMethod);
+
+    return waitFor(() => {
+      expect(screen.getByText('Dog')).not.toBeEmptyDOMElement();
+    });
 
   });
 });
