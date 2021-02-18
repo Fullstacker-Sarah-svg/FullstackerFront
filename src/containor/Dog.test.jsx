@@ -9,9 +9,11 @@ describe.only('Dog containor', () => {
     render(<Dog />);
     const postMethod = screen.getByPlaceholderText('Enter post');
     const name = screen.getByPlaceholderText('Enter name');
+    const inputText = screen.getByPlaceholderText('Enter type');
 
     user.type(postMethod);
     user.type(name);
+    user.type(inputText);
 
     return waitFor(() => {
       expect(screen.getByText('Dog')).not.toBeEmptyDOMElement();
