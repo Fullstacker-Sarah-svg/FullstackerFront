@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import Dogresponse from '../components/answer/DogResponse';
 import RequestDog from '../components/app/request/RequestDogs';
-
+import styles from './Dog.css';
 
 import { deleteDog, findDogById, getDog, postDog, updateDog } from '../services/fetch';
 
@@ -48,7 +48,7 @@ export default class Dogs extends Component {
     render() {
       const { name, type, characteristic, response, method } = this.state;
       return (
-        <>
+        <div className= {styles.Dog}>
           <RequestDog
             name={name}
             type={type}
@@ -59,7 +59,7 @@ export default class Dogs extends Component {
           />
 
           <Dogresponse response={response} />
-        </>
+        </div>
       );
     }
 }
