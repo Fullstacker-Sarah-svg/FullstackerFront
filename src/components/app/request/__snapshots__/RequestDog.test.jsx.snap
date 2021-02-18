@@ -2,139 +2,141 @@
 
 exports[`Renders the request dog page diplays the page for dogs 1`] = `
 <DocumentFragment>
-  <form>
-    <title
-      date-testid="Dog"
-    >
-      Dog
-    </title>
-    <h3>
-      Please select one
-    </h3>
-    <div>
-      <input
-        id="post"
-        name="method"
-        placeholder="Enter post"
-        type="radio"
-        value="post"
-      />
-      <label
-        for="post"
+  <div>
+    <form>
+      <title
+        date-testid="Dog"
       >
-        Add an Dog
-      </label>
-      <input
-        name="name"
-        placeholder="Enter name"
-        type="text"
-        value="daisy"
-      />
-      <input
-        name="type"
-        placeholder="Enter type"
-        type="text"
-        value="bulldog"
-      />
-      <input
-        name="characteristic"
-        placeholder="Enter characteristic"
-        type="text"
-        value="brintle"
-      />
-    </div>
-    <div>
-      <input
-        id="get"
-        name="method"
-        type="radio"
-        value="get"
-      />
-      <label
-        for="get"
-      >
-        Get all Dogs
-      </label>
-    </div>
-    <div>
-      <input
-        id="find"
-        name="method"
-        type="radio"
-        value="find"
-      />
-      <label
-        for="find"
-      >
-        Find Dog by Id
-      </label>
-      <input
-        name="id"
-        placeholder="Enter ID of Dog"
-        type="text"
-        value=""
-      />
-    </div>
-    <div>
-      <input
-        id="put"
-        name="method"
-        type="radio"
-        value="put"
-      />
-      <label
-        for="put"
-      >
-        Update dog by Id
-      </label>
-      <input
-        name="id"
-        placeholder="Enter ID of Dog"
-        type="text"
-        value=""
-      />
-      <br />
-      <input
-        name="name"
-        placeholder="Update name"
-        type="text"
-        value="daisy"
-      />
-      <input
-        name="type"
-        placeholder="Update type"
-        type="text"
-        value="bulldog"
-      />
-      <input
-        name="characteristic"
-        placeholder="Update characteristic"
-        type="text"
-        value="brintle"
-      />
-    </div>
-    <div>
-      <input
-        id="delete"
-        name="method"
-        type="radio"
-        value="delete"
-      />
-      <label
-        for="delete"
-      >
-        Delete Dog by Id
-      </label>
-      <input
-        name="id"
-        placeholder="Enter ID of Dog"
-        type="text"
-        value=""
-      />
-    </div>
-    <button>
-      Submit
-    </button>
-  </form>
+        Dog
+      </title>
+      <h3>
+        Please select one of the options!
+      </h3>
+      <div>
+        <input
+          id="post"
+          name="method"
+          placeholder="Enter post"
+          type="radio"
+          value="post"
+        />
+        <label
+          for="post"
+        >
+          Add an Dog
+        </label>
+        <input
+          name="name"
+          placeholder="Enter name"
+          type="text"
+          value="daisy"
+        />
+        <input
+          name="type"
+          placeholder="Enter type"
+          type="text"
+          value="bulldog"
+        />
+        <input
+          name="characteristic"
+          placeholder="Enter characteristic"
+          type="text"
+          value="brintle"
+        />
+      </div>
+      <div>
+        <input
+          id="get"
+          name="method"
+          type="radio"
+          value="get"
+        />
+        <label
+          for="get"
+        >
+          Get all Dogs
+        </label>
+      </div>
+      <div>
+        <input
+          id="find"
+          name="method"
+          type="radio"
+          value="find"
+        />
+        <label
+          for="find"
+        >
+          Find Dog by Id
+        </label>
+        <input
+          name="id"
+          placeholder="Enter ID of Dog"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          id="put"
+          name="method"
+          type="radio"
+          value="put"
+        />
+        <label
+          for="put"
+        >
+          Update dog by Id
+        </label>
+        <input
+          name="id"
+          placeholder="Enter ID of Dog"
+          type="text"
+          value=""
+        />
+        <br />
+        <input
+          name="name"
+          placeholder="Update name"
+          type="text"
+          value="daisy"
+        />
+        <input
+          name="type"
+          placeholder="Update type"
+          type="text"
+          value="bulldog"
+        />
+        <input
+          name="characteristic"
+          placeholder="Update characteristic"
+          type="text"
+          value="brintle"
+        />
+      </div>
+      <div>
+        <input
+          id="delete"
+          name="method"
+          type="radio"
+          value="delete"
+        />
+        <label
+          for="delete"
+        >
+          Delete Dog by Id
+        </label>
+        <input
+          name="id"
+          placeholder="Enter ID of Dog"
+          type="text"
+          value=""
+        />
+      </div>
+      <button>
+        Submit
+      </button>
+    </form>
+  </div>
 </DocumentFragment>
 `;

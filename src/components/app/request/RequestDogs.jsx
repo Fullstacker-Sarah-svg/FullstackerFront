@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 function RequestDog({ onSubmit, onChange, name, type, characteristic, method, id }) {
 
   return (
-    <>
+    <div>
       <form onSubmit={onSubmit} >
         <title date-testid="Dog">Dog</title>
 
-        <h3>Please select one</h3>
+        <h3>Please select one of the options!</h3>
         <div>
           <input 
             id="post"
@@ -135,7 +135,7 @@ function RequestDog({ onSubmit, onChange, name, type, characteristic, method, id
         <button>Submit</button>
   
       </form>
-    </>
+    </div>
   );
 }
 RequestDog.propTypes = {
