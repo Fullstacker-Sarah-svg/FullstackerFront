@@ -10,7 +10,10 @@ describe.only('Dog containor', () => {
     const postMethod = screen.getByPlaceholderText('Enter post');
     const name = screen.getByPlaceholderText('Enter name');
     const inputText = screen.getByPlaceholderText('Enter type');
+    // eslint-disable-next-line max-len
+    const inputCharacteristic = screen.getByPlaceholderText('Enter characteristic');
 
+    user.type(inputCharacteristic);
     user.type(postMethod);
     user.type(name);
     user.type(inputText);
