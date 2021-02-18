@@ -12,11 +12,13 @@ describe.only('Dog containor', () => {
     const inputText = screen.getByPlaceholderText('Enter type');
     // eslint-disable-next-line max-len
     const inputCharacteristic = screen.getByPlaceholderText('Enter characteristic');
+    const getMethod = screen.getByText('Get all Dogs');
 
     user.type(inputCharacteristic);
     user.type(postMethod);
     user.type(name);
     user.type(inputText);
+    user.type(getMethod);
 
     return waitFor(() => {
       expect(screen.getByText('Dog')).not.toBeEmptyDOMElement();
